@@ -27,13 +27,12 @@ footer {
   margin: 3rem; }
 
 #screen-height {
-  min-height: 90.5vh;
+  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  /* NEW */
-  border: 1px solid #34afad; }
+  /* NEW */ }
 
 .jumbotron.jumbotron-fluid {
   margin-bottom: 0px;
@@ -44,6 +43,7 @@ footer {
   align-items: center; }
 
 .call-for-action {
+  margin-top: 80px;
   height: 100vh; }
 
 #screen-height-33 {
@@ -2691,7 +2691,7 @@ tbody.collapse.show {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 1.11111rem 1rem; }
+  padding: 0.5rem 1rem; }
 
 .navbar-brand {
   display: inline-block;

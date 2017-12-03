@@ -5,7 +5,6 @@ This project has two branches:
 - **sources**: is where the content is created and where the site is modified. Is from where the build is launched and the main working branch.
 - **master**: is the 'dist' folder. This is the output from pelican, and the published side of the repository.
 
-
 # Travis and gh-pages autodeployment 
 
 This set-up will automatically build the site using Travis-ci. The build is trigered every time a push is done to the sources branch.
@@ -19,8 +18,8 @@ This set-up will automatically build the site using Travis-ci. The build is trig
 2. **.gitignore some folders** not really needed by pelican:
 	
         /output
-		/themes/simple-boot/node_modules
-        /themes/simple-boot/bower_components
+		/themes/houtland-theme/node_modules
+        /themes/houtland-theme/bower_components
         # any other extra stuff.
 
 3. **Preparation for deploying**:
