@@ -11,9 +11,6 @@ footer {
   color: #eceeef;
   line-height: 1rem; }
 
-.contact {
-  text-decoration: none; }
-
 .debug-1 {
   border: 1px solid #db5461; }
 
@@ -58,6 +55,10 @@ footer {
   background-position: center;
   display: flex;
   /* NEW */ }
+
+.donate-block {
+  height: 150px;
+  background-color: #eceeef; }
 
 .page-content.container {
   max-width: 800px; }
@@ -533,7 +534,7 @@ h6, .h6 {
   line-height: 1.1; }
 
 .display-4 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.1; }
 

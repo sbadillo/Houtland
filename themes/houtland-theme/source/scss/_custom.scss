@@ -10,9 +10,6 @@
 // ====== Variable overrides and others =====
 // ==========================================
 
-
-$bg-2:				#474e5d;			// 	just a color
-
 // custom colors
 $color-keppel:					#34afad;			// ~teal
 
@@ -31,8 +28,8 @@ $container-max-widths: (
   );
 
 // modification to display-4 sizes (text was too large)
-$display4-size: 			3rem; 	//default was 3.5rem
-$display4-weight:     300 ; 
+// $display4-size: 			3rem; 	//default was 3.5rem
+// $display4-weight:     300 ; 
 
 
 
@@ -51,13 +48,7 @@ footer {
 	line-height:$spacer;
 }
 
-.contact  {
-    text-decoration: none;
-}
-
-
 //random
-
 
 .debug-1 { 
 	border: 1px solid $color-roman;
@@ -123,6 +114,13 @@ footer {
 }
 
 
+// ========= Section 3: Donate buttons =========
+
+
+.donate-block {
+  height: 150px;
+  background-color: $gray-lighter;
+}
 
 
 
