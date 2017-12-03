@@ -62,9 +62,11 @@ footer {
   display: flex;
   /* NEW */ }
 
-.donate-block {
-  height: 150px;
-  background-color: #eceeef; }
+.progress {
+  border: solid 1px black; }
+
+.border-right {
+  border-right: solid 1px #292b2c; }
 
 .page-content.container {
   max-width: 800px; }

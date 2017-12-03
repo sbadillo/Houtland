@@ -18,6 +18,7 @@ $color-roman:						#db5461;			// ~rojo palido 1
 $color-burnt-sienna:    #ee6055;			// ~rojo palido 2 mas claro
 $color-river-bed:				#474e5d;			// ~obscuro-gris-azulon
 $color-aqua-island:			#a8dadc;			// ~color cielo claro
+$almost-black:          #292b2c;
 
 
 $container-max-widths: (
@@ -43,7 +44,7 @@ $container-max-widths: (
 footer {
 	height:auto;
 	padding:$spacer 0;
-	background-color: #292b2c;
+	background-color: $almost-black;
 	color:$gray-lighter;
 	line-height:$spacer;
 }
@@ -105,6 +106,9 @@ footer {
 	height: 100vh;
 }
 
+.container-stats {
+  // width: 80%;
+}
 
 #screen-height-33 {
     min-height: 33vh;
@@ -122,15 +126,15 @@ footer {
     display: flex; /* NEW */
 }
 
+.progress {
+  border: solid 1px black;
+}
 
 // ========= Section 3: Donate buttons =========
 
-
-.donate-block {
-  height: 150px;
-  background-color: $gray-lighter;
+.border-right {
+  border-right:solid 1px $almost-black;
 }
-
 
 
 // ==========================================
