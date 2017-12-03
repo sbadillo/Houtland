@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Map</title>
+  <meta name="tags" content="Secciones" />
+  <meta name="summary" content="Short version for index and feeds" />
+</head>
+<body>
+
+  <!-- Texto líder
+  ===========================================-->
+
+
+  <div class= "texto-lider">
+    <p class="lead text-muted">Map module here.</p>
+  </div>
+
+
+
+  <!-- Big container google-maps -->
+
+  <div class="container-fluid location-container py-4">
+    <h2 class="h4">This is a random map</h2>
+    <div id="googleMap" style="height:400px;width:100%;"></div>
+    <script>
+      function myMap() {
+        var myCenter = new google.maps.LatLng(51.439673, 5.477431 );
+        var mapProp = {
+          center:myCenter, 
+          zoom:7, 
+          scrollwheel:false, 
+          draggable:true,
+          mapTypeControl: false,
+          streetViewControl: false,
+          mapTypeId:google.maps.MapTypeId.ROADMAP};
+          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhhgV2ChjvMqzpjcWpm0m-Fn7jhNV5VE&callback=myMap"></script>
+    </div>
+ 
+
+
+</body>
+</html>
+
+
+
+

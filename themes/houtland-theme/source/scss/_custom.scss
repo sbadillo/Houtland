@@ -1,0 +1,154 @@
+// Esta es la version de _custom que se injecta a bootstrap
+// version realizada para Dekoa
+
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// ==========================================
+// ====== Variable overrides and others =====
+// ==========================================
+
+
+$bg-2:				#474e5d;			// 	just a color
+
+// custom colors
+$color-keppel:					#34afad;			// ~teal
+
+$color-red-dekoa: 			#e31d1a;			// ~rojo dekoa logo original
+$color-roman:						#db5461;			// ~rojo palido 1
+$color-burnt-sienna:    #ee6055;			// ~rojo palido 2 mas claro
+$color-river-bed:				#474e5d;			// ~obscuro-gris-azulon
+$color-aqua-island:			#a8dadc;			// ~color cielo claro
+
+
+$navbar-padding-y:	($spacer / .9);
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+  xl: 1200px // changed from original 1140px
+  );
+
+// modification to display-4 sizes (text was too large)
+$display4-size: 			3rem; 	//default was 3.5rem
+$display4-weight:     300 ; 
+
+
+
+// ==========================================
+// ====== Base.html and general stuff =======
+// ==========================================
+
+
+
+
+footer {
+	height:auto;
+	padding:$spacer 0;
+	background-color: $color-river-bed;
+	color:$gray-lighter;
+	line-height:$spacer;
+}
+
+
+//random
+
+
+.debug-1 { 
+	border: 1px solid $color-roman;
+}
+
+.debug-2 { 
+	border: 1px solid $color-aqua-island;
+}
+
+.debug-3 {
+	border: 1px solid $color-burnt-sienna;
+}
+
+
+// textos
+
+.container.texto-lider {
+	max-width: 750px; 
+
+}
+
+.texto-lider  {
+	margin: 3rem;
+}
+
+
+
+// ==========================================
+// ============ Index stuff =================
+// ==========================================
+
+
+// ======== Section 1: Main splash ========
+
+#screen-height {
+    min-height: 92vh - $line-height-base;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex; /* NEW */
+    border: 1px solid $color-keppel;
+}
+
+
+.jumbotron.jumbotron-fluid {
+  margin-bottom:0px;
+  height: 75vh - $line-height-base; // non-optimal (try to fit all viewport)
+  background:no-repeat;
+  background-size: cover;
+  background-position: top;
+  align-items:center;
+}
+
+// ======== Section 2: call for action ========
+
+.call-for-action { 
+	height: 100vh;
+}
+
+
+#screen-height-33 {
+    min-height: 33vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex; /* NEW */
+}
+
+#screen-height-20 {
+    min-height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex; /* NEW */
+}
+
+
+
+
+
+// ==========================================
+// ============ Pages templates =============
+// ==========================================
+
+.page-content.container {
+	max-width: 800px;
+}
+
+.page-title {
+	margin-bottom: 1*$spacer;
+	color: $gray-light;
+}
+
+.all-pages-footer {
+	padding-bottom:$spacer *2;
+}
+
