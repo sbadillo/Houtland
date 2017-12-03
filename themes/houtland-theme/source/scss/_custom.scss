@@ -46,9 +46,13 @@ $display4-weight:     300 ;
 footer {
 	height:auto;
 	padding:$spacer 0;
-	background-color: $color-river-bed;
+	background-color: #292b2c;
 	color:$gray-lighter;
 	line-height:$spacer;
+}
+
+.contact  {
+    text-decoration: none;
 }
 
 
@@ -65,18 +69,6 @@ footer {
 
 .debug-3 {
 	border: 1px solid $color-burnt-sienna;
-}
-
-
-// textos
-
-.container.texto-lider {
-	max-width: 750px; 
-
-}
-
-.texto-lider  {
-	margin: 3rem;
 }
 
 

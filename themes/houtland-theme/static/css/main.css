@@ -7,9 +7,12 @@
 footer {
   height: auto;
   padding: 1rem 0;
-  background-color: #474e5d;
+  background-color: #292b2c;
   color: #eceeef;
   line-height: 1rem; }
+
+.contact {
+  text-decoration: none; }
 
 .debug-1 {
   border: 1px solid #db5461; }
@@ -19,12 +22,6 @@ footer {
 
 .debug-3 {
   border: 1px solid #ee6055; }
-
-.container.texto-lider {
-  max-width: 750px; }
-
-.texto-lider {
-  margin: 3rem; }
 
 #screen-height {
   min-height: 100vh;
