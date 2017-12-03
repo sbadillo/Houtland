@@ -13,14 +13,23 @@
 
 
 {# Section 1 : Video (Jumbotron) #}
-<!-- <div class="jumbotron jumbotron-fluid lazy" data-background="{{ SITEURL }}/images/pagina_de_inicio/jumbotron.jpg"> -->
-  <div id="screen-height" class="jumbotron jumbotron-fluid lazy" data-background="http://via.placeholder.com/1200x600/eee/fff/?text=video">
-    <div class="container text-center">
-      <h1 class="display-4" >Main message</h1>
-      <p class="lead">Lead line</p>
-    </div>
-  </div>
   
+{# <div class="jumbotron text-center"> #}
+  
+    
+    {# <video width="740" height="460" controls="" autoplay="" muted=""> #}
+    <video id="container-video" controls="" autoplay="" muted="">
+      <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"><!-- WebKit video    -->
+      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm"><!-- WebM/VP8/Vorbis -->
+      <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"><!-- Firefox / Opera -->
+      <object width="640" height="505" type="application/x-shockwave-flash" data="http://www.youtube.com/v/YE7VzlLtp-4">
+      <param name="movie" value="http://www.youtube.com/v/YE7VzlLtp-4">
+        <!-- fallback image -->
+        <img src="poster.jpg" width="640" height="360" alt="" title="No video playback capabilities, please download the video below">
+      </object>
+    </video>
+    
+{# </div> #}
 
 
   {# Section 2 : Action #}

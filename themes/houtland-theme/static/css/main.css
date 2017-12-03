@@ -28,13 +28,19 @@ footer {
   display: flex;
   /* NEW */ }
 
-.jumbotron.jumbotron-fluid {
-  margin-bottom: 0px;
-  height: 73.5vh;
-  background: no-repeat;
-  background-size: cover;
-  background-position: top;
-  align-items: center; }
+/* used for video playback */
+.jumbotron {
+  position: relative;
+  z-index: -2; }
+
+#container-video {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%; }
 
 .call-for-action {
   margin-top: 80px;
