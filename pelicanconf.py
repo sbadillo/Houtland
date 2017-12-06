@@ -19,9 +19,11 @@ THEME = './themes/houtland-theme'
 
 STATIC_PATHS = ['images','extra','pages/images'] # paths copied identically from content folder.
 
-# # Social widget: names are used for font-awesome icons, use lowerspace
-# SOCIAL = (('instagram', 'https://www.instagram.com/'),
-#           ('facebook', 'https://www.facebook.com/'),)
+PLUGIN_PATHS = ['./pelican-plugins']
+# PLUGINS = ['jinja2content']
+
+# Social widget: names are used for font-awesome icons, use lowerspace
+SOCIAL = ('facebook', 'https://www.facebook.com/')
 
 DEFAULT_PAGINATION = False
 RELATIVE_URLS = True  # true for deployment, see publishconf.py for publishing config
@@ -32,5 +34,9 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+
+# MORE customization stuff
+SUMMARY_MAX_LENGTH = 30	      # The size (in caracters) of the summary of the articles to show in the main page.
 
 

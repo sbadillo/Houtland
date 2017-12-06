@@ -126,10 +126,6 @@ footer {
     display: flex; /* NEW */
 }
 
-.progress {
-  border: solid 1px black;
-}
-
 // ========= Section 3: Donate buttons =========
 
 .border-right {
@@ -141,16 +137,29 @@ footer {
 // ============ Pages templates =============
 // ==========================================
 
+
 .page-content.container {
 	max-width: 800px;
 }
 
-.page-title {
-	margin-bottom: 1*$spacer;
-	color: $gray-light;
-}
+// .page-title {
+// 	margin-bottom: 1*$spacer;
+// 	color: $gray-light;
+// }
 
 .all-pages-footer {
 	padding-bottom:$spacer *2;
 }
 
+
+
+
+// ==========================================
+// ============ Other details== =============
+// ==========================================
+
+
+// general color for fontawesome icons
+.fa {
+  color: $almost-black;
+}

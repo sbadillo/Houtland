@@ -62,21 +62,17 @@ footer {
   display: flex;
   /* NEW */ }
 
-.progress {
-  border: solid 1px black; }
-
 .border-right {
   border-right: solid 1px #292b2c; }
 
 .page-content.container {
   max-width: 800px; }
 
-.page-title {
-  margin-bottom: 1rem;
-  color: #636c72; }
-
 .all-pages-footer {
   padding-bottom: 2rem; }
+
+.fa {
+  color: #292b2c; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {

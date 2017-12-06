@@ -254,23 +254,6 @@ $(document).ready(function() {
 		effect          : "fadeIn"
 	});
 
-	// get instagram picture from pelicanconf
-	
-	var href = $('.instagram-thumb').attr('href');
-	$.ajax({
-		url: "https://api.instagram.com/oembed/?url="+href,
-		type: "GET",
-		crossDomain: true,
-		dataType: "jsonp",
-		success: function(data){
-			// console.log(data['thumbnail_url'])
-			$('.bg-box-instagram').attr("data-background", 
-				data['thumbnail_url']);
-			$('.bg-box-instagram').lazyload({effect:"fadeIn"});
-		}
-	});
-
-
 	// Hover effects main page
 
 	$('.hide-content-hover').hover(function() {
