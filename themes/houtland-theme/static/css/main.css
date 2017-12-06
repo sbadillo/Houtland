@@ -46,16 +46,8 @@ footer {
   margin-top: 150px;
   margin-bottom: 150px; }
 
-#screen-height-33 {
-  min-height: 33vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  /* NEW */ }
-
 #screen-height-20 {
-  min-height: 20vh;
+  min-height: 130px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
