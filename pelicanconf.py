@@ -27,7 +27,7 @@ USE_FOLDER_AS_CATEGORY = True
 
 
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['pelican-bootstrapify']
+PLUGINS = ['bootstrapify']
 
 BOOTSTRAPIFY = {'img': ['img-fluid']} # bootstrapify uses beautifulsoup to apply classes after rendering, using this dictionary
 
