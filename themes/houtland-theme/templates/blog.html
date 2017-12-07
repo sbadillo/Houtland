@@ -33,19 +33,20 @@
 
 
 <!-- New Section -->
-<div class="bg-faded p-3">
+<div class="bg-newsstrip p-3">
 
 
   <h1 class="mb-2">{{ SITENAME }} News</h1>
 
-  {% for article in articles_page.object_list %}
+  {% for article in articles_page.object_list if "news" == article.category %}
   <article class="hentry">
-    <header> <h4 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h4> </header>
+    <header> <h4 class="entry-title"><a href="{{ SITEURL }}/{{ article.category }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h4> </header>
     <div class="text-muted">{{ article.locale_date }}</div>
 
     <div class="entry-content"> {{ article.summary }} </div><!-- entry-content -->
   </article>
   {% endfor %}
+
 
 
 </div>

@@ -25,7 +25,7 @@ $container-max-widths: (
 	sm: 540px,
 	md: 720px,
 	lg: 960px,
-  xl: 1200px // changed from original 1140px
+  xl: 1140px // changed from original 1140px
   );
 
 // modification to display-4 sizes (text was too large)
@@ -39,7 +39,9 @@ $container-max-widths: (
 // ==========================================
 
 
-
+#navbar-onscroll {
+  display:none; 
+}
 
 footer {
 	height:auto;
@@ -80,22 +82,30 @@ footer {
     display: flex; /* NEW */
 }
 
-/* used for video playback */
-.jumbotron{
-  position: relative;
-  z-index:-2;
+
+.video-jumbo {
+  background-color: #778899;
+  // margin: $spacer*2 0;
 }
 
 #container-video { 
   // position: fixed;
+  margin: $spacer*2 auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   overflow: hidden;
   z-index: -1;
-  width:95%;
+  width:85%;
+}
 
+#grad {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $almost-black, $almost-black, #393b4c, $almost-black); /* For Safari 5.1 to 6.0 */
+  // background: -o-linear-gradient(red, yellow, green); /* For Opera 11.1 to 12.0 */
+  // background: -moz-linear-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
+  // background: linear-gradient(red, yellow, green); /* Standard syntax */
 }
 
 
@@ -123,9 +133,16 @@ footer {
 
 // ========= Section 3: Donate buttons =========
 
+.bg-newsstrip {
+  background-color: #fafafa;
+}
+
 .border-right {
   border-right:solid 1px $almost-black;
 }
+
+
+
 
 
 // ==========================================
@@ -137,10 +154,6 @@ footer {
 	max-width: 800px;
 }
 
-// .page-title {
-// 	margin-bottom: 1*$spacer;
-// 	color: $gray-light;
-// }
 
 .all-pages-footer {
 	padding-bottom:$spacer *2;
@@ -158,3 +171,9 @@ footer {
 .fa {
   color: $almost-black;
 }
+
+.no-deco-please {
+  color: inherit;
+  text-decoration: none !important;
+}
+

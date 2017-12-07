@@ -1,48 +1,34 @@
 $(document).ready(function() {
 
+	// Appear on scroll navbar
+	// (this one is used in the main page only)
+	
+	// hide .navbar-onscroll first (this one is used in the main page only)
+
+    $("#navbar-onscroll").hide();
+    $('#navbar-onscroll').removeClass('static-top').addClass('fixed-top');
+
+	// fade in .navbar-onscrollo
+	$(function () {
+		$(window).scroll(function () {
+            // set distance user needs to scroll before we fadeIn navbar
+            if ($(this).scrollTop() > 500) {
+            	$('#navbar-onscroll').fadeIn(350);
+            	$('#navbar-onscroll').addClass('d-flex');
+            } else {
+            	$('#navbar-onscroll').removeClass('d-flex');
+            	$('#navbar-onscroll').fadeOut(10);
+            }
+        });
+	});
+
+
+
 	// Use lazyload
 
 	$(".lazy").lazyload({
 		effect          : "fadeIn"
 	});
-
-	// Hover effects main page
-
-	$('.hide-content-hover').hover(function() {
-		$(this).find('.content').hide();
-	}, function() {
-		$(this).find('.content').show();		
-	});
-
-	$('#box-texto').hover(function() { 
-		var imgurl = 'url(' + $(this).attr('data-background') +')';
-		console.log(imgurl);
-		$(this).find('.bg-box-3').css('background', imgurl);
-		$(this).find('.bg-box-3').css('background-size', 'cover');
-				
-	}, function() {
-		$(this).find('.bg-box-3').css('background', '#e31d1a');
-	});
-
-
-	// Call jcarousel using modernizr
-	// call plugin jcarouselLazyLoading
-
-	$('.jcarousel')
-	.jcarousel({
-		transitions: Modernizr.csstransitions ? {
-			transforms:   Modernizr.csstransforms,
-			transforms3d: Modernizr.csstransforms3d,
-			easing:       'ease'
-		} : false
-	})
-	.jcarouselAutoscroll({
-		interval: 10000,
-		target: '+=1',
-		autostart: true
-	})
-	.jcarouselLazyLoading()
-	.jcarouselSwipe();
 
 
 	// magnific popup
@@ -54,16 +40,16 @@ $(document).ready(function() {
 			'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
           '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
-      patterns: {
-       	gmaps: {
-       		index: '//maps.google.',
-       		src: '%id%&output=embed'
-       	}
-      },
-  		
+          patterns: {
+          	gmaps: {
+          		index: '//maps.google.',
+          		src: '%id%&output=embed'
+          	}
+          },
+
   		srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-		}
-	});
+  	}
+  });
 
 });
 

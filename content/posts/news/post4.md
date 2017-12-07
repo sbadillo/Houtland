@@ -1,6 +1,5 @@
 Title: There is Something New
 Date: 2017-10-12
-category: Categoria-Uno
 
 Suspendisse eget dolor gravida sem. Integer adipiscing. Vestibulum dignissim a, gravida tellus tortor, hendrerit wisi. Aliquam vel lorem. Mauris imperdiet, urna mauris, consectetuer congue eleifend. Nulla gravida vel, dui. Cras ut ante. Mauris luctus laoreet. 
 

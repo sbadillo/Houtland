@@ -17,16 +17,27 @@ PATH = 'content'
 
 THEME = './themes/houtland-theme'
 
-STATIC_PATHS = ['images','extra','pages/images'] # paths copied identically from content folder.
+STATIC_PATHS = ['posts', 'posts/research-content', 'images','extra'] # paths copied identically from content folder.
+
+ARTICLE_PATHS = ['posts']
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
+
+
+USE_FOLDER_AS_CATEGORY = True
+
 
 PLUGIN_PATHS = ['./pelican-plugins']
-# PLUGINS = ['jinja2content']
+PLUGINS = ['pelican-bootstrapify']
+
+BOOTSTRAPIFY = {'img': ['img-fluid']} # bootstrapify uses beautifulsoup to apply classes after rendering, using this dictionary
+
 
 # Social widget: names are used for font-awesome icons, use lowerspace
 SOCIAL = ('facebook', 'https://www.facebook.com/')
 
 DEFAULT_PAGINATION = False
 RELATIVE_URLS = True  # true for deployment, see publishconf.py for publishing config
+DEFAULT_DATE = 'fs' # when no date is specified in an article, just today's date
 
 # OTHER
 FEED_ALL_ATOM = None
