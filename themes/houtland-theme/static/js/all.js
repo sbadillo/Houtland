@@ -253,22 +253,26 @@ $(document).ready(function() {
 	
 	// hide .navbar-onscroll first (this one is used in the main page only)
 
-    $("#navbar-onscroll").hide();
-    $('#navbar-onscroll').removeClass('static-top').addClass('fixed-top');
+    var pathname = window.location.pathname; // Returns path only
+    if (pathname == '/') {
+    
+      $(".super-navbar").hide();
+      $('.super-navbar').removeClass('static-top').addClass('fixed-top');
 
-	// fade in .navbar-onscrollo
-	$(function () {
-		$(window).scroll(function () {
-            // set distance user needs to scroll before we fadeIn navbar
-            if ($(this).scrollTop() > 500) {
-            	$('#navbar-onscroll').fadeIn(350);
-            	$('#navbar-onscroll').addClass('d-flex');
-            } else {
-            	$('#navbar-onscroll').removeClass('d-flex');
-            	$('#navbar-onscroll').fadeOut(10);
-            }
-        });
-	});
+      // fade in .navbar-onscrollo
+      $(function () {
+        $(window).scroll(function () {
+                // set distance user needs to scroll before we fadeIn navbar
+                if ($(this).scrollTop() > 500) {
+                  $('.super-navbar').fadeIn(350);
+                  $('.super-navbar').addClass('d-flex');
+                } else {
+                  $('.super-navbar').removeClass('d-flex');
+                  $('.super-navbar').fadeOut(10);
+                }
+            });
+      });
+    };
 
 
 
