@@ -258,19 +258,19 @@ $(document).ready(function() {
     if (pathname == '/' || pathname == '/houtland/') {
     
       // hide it first
-      $("#super-navbar").hide();
-      $('#super-navbar').removeClass('static-top').addClass('fixed-top');
+      $(".super-navbar").hide();
+      $('.super-navbar').removeClass('static-top').addClass('fixed-top');
 
       $(function () {
         $(window).scroll(function () {
                 // set distance user needs to scroll before we fadeIn navbar
                 if ($(this).scrollTop() > 500) {
-                  $('#super-navbar').fadeIn(350);
-                  $('#super-navbar').addClass('d-flex');
+                  $('.super-navbar').fadeIn(350);
+                  $('.super-navbar').addClass('d-flex');
                   // console.log('show');
                 } else {
-                  $('#super-navbar').removeClass('d-flex');
-                  $('#super-navbar').fadeOut(10);
+                  $('.super-navbar').removeClass('d-flex');
+                  $('.super-navbar').fadeOut(10);
                   // console.log('hide');
                 }
             });
