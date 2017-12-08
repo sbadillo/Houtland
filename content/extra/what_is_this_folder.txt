@@ -1,0 +1,4 @@
+this folder is to save any random stuff needed for the page.
+
+* Favicons folder : 	The images used for the little website icon, 
+			you can create new favicons in here https://realfavicongenerator.net/ and then substitute everything inside this folder.
