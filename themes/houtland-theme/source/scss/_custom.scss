@@ -38,8 +38,12 @@ $container-max-widths: (
 // ====== Base.html and general stuff =======
 // ==========================================
 
+#super-navbar {
+  display:none; 
+  // width:100% !important;
+}
 
-#navbar-onscroll {
+.super-navbar {
   display:none; 
 }
 
@@ -75,16 +79,16 @@ footer {
 // ======== Section 1: Main splash ========
 
 #screen-height {
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
     display: flex; /* NEW */
-}
+  }
 
 
-.video-jumbo {
-  background-color: #778899;
+  .video-jumbo {
+    background-color: #778899;
   // margin: $spacer*2 0;
 }
 
@@ -124,12 +128,12 @@ footer {
 
 
 #screen-height-20 {
-    min-height: 130px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  min-height: 130px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
     display: flex; /* NEW */
-}
+  }
 
 // ========= Section 3: Donate buttons =========
 

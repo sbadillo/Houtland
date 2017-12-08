@@ -3,27 +3,26 @@ $(document).ready(function() {
 	// Appear on scroll navbar
 	// (this one is used in the main page only)
 	
-	// hide .navbar-onscroll first (this one is used in the main page only)
+	// hide super-navbar first (this one is used in the main page only)
 
     var pathname = window.location.pathname; // Returns path only
     console.log(pathname);
     if (pathname == '/' || pathname == '/houtland/') {
     
-      $(".super-navbar").hide();
-      $('.super-navbar').removeClass('static-top').addClass('fixed-top');
-      // console.log('asigned .super-navbar');
+      // hide it first
+      $("#super-navbar").hide();
+      $('#super-navbar').removeClass('static-top').addClass('fixed-top');
 
-      // fade in .navbar-onscrollo
       $(function () {
         $(window).scroll(function () {
                 // set distance user needs to scroll before we fadeIn navbar
                 if ($(this).scrollTop() > 500) {
-                  $('.super-navbar').fadeIn(350);
-                  $('.super-navbar').addClass('d-flex');
+                  $('#super-navbar').fadeIn(350);
+                  $('#super-navbar').addClass('d-flex');
                   // console.log('show');
                 } else {
-                  $('.super-navbar').removeClass('d-flex');
-                  $('.super-navbar').fadeOut(10);
+                  $('#super-navbar').removeClass('d-flex');
+                  $('#super-navbar').fadeOut(10);
                   // console.log('hide');
                 }
             });
