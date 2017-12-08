@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     var pathname = window.location.pathname; // Returns path only
     console.log(pathname);
-    if (pathname == '/') {
+    if (pathname == '/' || pathname == '/houtland/') {
     
       $(".super-navbar").hide();
       $('.super-navbar').removeClass('static-top').addClass('fixed-top');
