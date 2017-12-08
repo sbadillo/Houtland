@@ -6,7 +6,7 @@ $(document).ready(function() {
 	// hide .navbar-onscroll first (this one is used in the main page only)
 
     var pathname = window.location.pathname; // Returns path only
-    console.log('pathname');
+    console.log(pathname);
     if (pathname == '/') {
     
       $(".super-navbar").hide();
