@@ -11,7 +11,8 @@ SITENAME = u'Houtland'
 
 
 SITEURL = ''  # empty, see publishconf.py for publishing config
-print('==== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL + ' by ' +  AUTHOR + '  ====')
+print('\n====================================================\n\
+===== Empieza Pelican! : ' + SITENAME + ' '+ SITEURL + ' by ' +  AUTHOR + '  ====')
 
 PATH = 'content'
 
@@ -22,12 +23,11 @@ STATIC_PATHS = ['posts', 'posts/research-content', 'images','extra'] # paths cop
 ARTICLE_PATHS = ['posts']
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
 
-
 USE_FOLDER_AS_CATEGORY = True
 
 
-PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['bootstrapify']
+PLUGIN_PATHS = ['./pelican-selected-plugins']
+PLUGINS = ['pelican-bootstrapify']
 
 BOOTSTRAPIFY = {'img': ['img-fluid']} # bootstrapify uses beautifulsoup to apply classes after rendering, using this dictionary
 
