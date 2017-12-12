@@ -12,7 +12,6 @@
 
 // custom colors
 $color-keppel:					#34afad;			// ~teal
-
 $color-red-dekoa: 			#e31d1a;			// ~rojo dekoa logo original
 $color-roman:						#db5461;			// ~rojo palido 1
 $color-burnt-sienna:    #ee6055;			// ~rojo palido 2 mas claro
@@ -20,16 +19,33 @@ $color-river-bed:				#474e5d;			// ~obscuro-gris-azulon
 $color-aqua-island:			#a8dadc;			// ~color cielo claro
 $almost-black:          #292b2c;
 
+// timm's color palette
+$color-houtland-softgreen:    #77c464;
+$color-houtland-middlegreen:  #397b3b;  
+$color-houtland-stronggreen:  #204d2f;
+$color-houtland-red:          #b11e24;
+
+
+//changes to button color
+$brand-success:         $color-houtland-softgreen;
+$btn-success-bg:        $color-houtland-softgreen;
+$brand-success:         $color-houtland-softgreen;
+// $enable-rounded: false;
+
+// font override for <body>:
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// change of container sizes
 
 $container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-  xl: 1140px // changed from original 1140px
+  sm: 570px,  // changed from 540px
+  md: 800px,  // changed from 740px
+  lg: 930px,  // changed from 960px
+  xl: 1140px 
   );
 
 // modification to display-4 sizes (text was too large)
-// $display4-size: 			3rem; 	//default was 3.5rem
+// $display4-size:      3rem;   //default was 3.5rem
 // $display4-weight:     300 ; 
 
 
@@ -83,29 +99,21 @@ footer {
   }
 
 
-  .video-jumbo {
-    background-color: #778899;
-  // margin: $spacer*2 0;
+.container-fluid.video-jumbo {
+  width: 100%;
+  padding: 0;
+  background-color: #000;
 }
 
 #container-video { 
-  // position: fixed;
-  margin: $spacer*2 auto;
+  // margin-top: $spacer*2;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   overflow: hidden;
   z-index: -1;
-  width:85%;
-}
-
-#grad {
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, $almost-black, $almost-black, #393b4c, $almost-black); /* For Safari 5.1 to 6.0 */
-  // background: -o-linear-gradient(red, yellow, green); /* For Opera 11.1 to 12.0 */
-  // background: -moz-linear-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
-  // background: linear-gradient(red, yellow, green); /* Standard syntax */
+  width:100%;
 }
 
 
@@ -119,7 +127,7 @@ footer {
 }
 
 .container-stats {
-  // width: 80%;
+  width: 70%;
 }
 
 
@@ -128,7 +136,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-    display: flex; /* NEW */
+  display: flex; /* NEW */
   }
 
 // ========= Section 3: Donate buttons =========
@@ -140,7 +148,6 @@ footer {
 .border-right {
   border-right:solid 1px $almost-black;
 }
-
 
 
 
@@ -161,7 +168,6 @@ footer {
 
 
 
-
 // ==========================================
 // ============ Other details== =============
 // ==========================================
@@ -177,3 +183,29 @@ footer {
   text-decoration: none !important;
 }
 
+.btn.btn-custom {
+  color: #000;
+}
+
+.progress-bar.progress-custom {
+  border-right: 1px solid $almost-black;
+  background-color: #fff;
+  color: $almost-black;
+}
+
+.progress {
+  border: 1px solid $almost-black;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+
+// ====================================
+//  Article pages
+
+.article-container {
+  margin-top: 3rem;
+}

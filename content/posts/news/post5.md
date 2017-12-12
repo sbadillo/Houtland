@@ -1,11 +1,11 @@
-Title: So we write articles
+Title: An article with an image.
 Date: 2017-11-12
 
-When you write a new article, like this one, the first 40 words of the article will be extracted for the main page. The rest will be hidden with three points. The size of the extract can be changed, but for now it is set to 40 words max.
+So, if you put an image in the first 40 words of your article, then also the image will be shown the main page. Like this one:
 
-You can also add a "manual summary" for that, check how I did the other article called This article has a summary section.
+![image](https://www.cgdev.org/sites/default/files/perssonetalblog1.png?itok=TUj8JebP)
 
-Also, if you put images in the first part of your article, they will be counted as the summary and sent to the main page also.
+It can be useful to add interest to your news. Then you keep writing normally.
 
 Nam ullamcorper lorem. Aliquam erat metus dolor, porttitor egestas. Proin imperdiet quis, justo. Fusce venenatis quis, congue ac, urna. Vestibulum ornare tortor et augue. Nulla pellentesque accumsan. Quisque consectetuer congue arcu elementum vitae, cursus dolor placerat sagittis non, tristique senectus et malesuada leo vel urna eu lobortis augue. 
 

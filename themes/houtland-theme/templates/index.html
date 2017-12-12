@@ -9,13 +9,12 @@
   {% block content_title %}
   
    
-  <div class="container-fluid video-jumbo text-center" id="grad">
+  <div class="container-fluid video-jumbo text-center">
     {# <video width="740" height="460" controls="" autoplay="" muted="" loop=""> #}
     <video id="container-video" controls="" autoplay="" muted="" loop="" >
-      {# <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"><!-- WebKit video    --> #}
       <source src="{{ SITEURL }}/extra/forestfly-forweb.mp4" type="video/mp4"><!-- WebKit video    -->
-      {# <source src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm"><!-- WebM/VP8/Vorbis --> #}
-      {# <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg"><!-- Firefox / Opera --> #}
+      {# <source src="backupvideowebm.webm" type="video/webm"><!-- WebM/VP8/Vorbis --> #}
+      {# <source src="backupvideoogg.ogg" type="video/ogg"><!-- Firefox / Opera --> #}
       <object width="640" height="505" type="application/x-shockwave-flash" data="http://www.youtube.com/v/YE7VzlLtp-4">
       <param name="movie" value="https://www.youtube.com/v/YE7VzlLtp-4">
         <!-- fallback image -->
@@ -25,53 +24,78 @@
   </div>
 
   {# Section 2 : Action #}
-
+  
   <div class="container call-for-action">
+
+  {#      2.1 Main message #}
+
     <div id="screen-height-20" class="row text-center">
       <div class="container my-auto">
-        <p class="h1">What if NL were covered with trees?</p>
+        <p class="h1 mb-4">What if the Netherlands were covered with trees?</p>
+        <p class="text-justify mx-4 px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente iure natus molestias at, sed alias assumenda ea, laudantium totam quo nemo. Rerum et laborum quos. Ut libero quasi amet iusto.
+        <p class=" mx-4 px-2">Lote iure natus molestias at, sed alias assumenda ea, laudantium totam quo nemo.</p>
       </div>
     </div>
+
+  {#      2.2 Buttons #}
 
     <div id="screen-height-20" class="row text-center ">
       <div class="container-fluid my-auto">
-        <button type="button" class="btn btn-lg btn-success mx-2">Locate</button>
-        <button type="button" class="btn btn-lg btn-danger mx-2">Donate</button>  
+        <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/tree01.html">Live</a>
+        <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="#">Something</a> 
+        <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/map.html">Map</a>  
       </div>
     </div>
 
-    <div id="screen-height-20" class="row text-center container" >
-      <div class="container text-center my-auto">
+  {#      2.3 Stats #}
 
-        <div class="progress my-2">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
-            <p class="float-left ml-2">Money</p>
+    <div id="screen-height-20" class="row text-center" >
+      <div class="container my-auto mx-auto text-center container-stats">
+
+        <div class="progress my-3 mx-4">
+          <div class="progress-bar progress-custom vertical-center" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+            <span class="float-left ml-1">Money</span>
           </div>
         </div>
-        <div class="progress my-2">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-            <p class="float-left ml-2">Trees</p>
+        <div class="progress my-3 mx-4">
+          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
+            <span class="float-left ml-1">Trees</span>
           </div>
         </div>
-        <div class="progress my-2">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
-            <p class="float-left ml-2">Time</p>
+        <div class="progress my-3 mx-4">
+          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 2%">
+            <span class="float-left ml-1 vertical-center">Time</span>
           </div>
         </div>
 
       </div>
     </div>
-  </div>
 
-  {# Section 3 : Description and News #}
+  </div><!--/.call-for-action (Section 2) -->
+
+
+  {# Section 3 : News #}
 
 
   <div class="container mb-4">
     <a id="news-link-target"></a>
     <div class="row">
 
+
       <div class="col-sm-8 border-right px-4">
+
+        {# Display fully the articles in the Articles in main page category #}
+        {% for article in articles_page.object_list if "articles-in-main-page" == article.category %}
+          <article class="hentry">
+            <header><h2 class="entry-title">{{ article.title }}</h2></header>
+            <div class="entry-content">{{ article.content }} </div><!-- entry-content -->
+          </article>
+        {% endfor %}
+
+        {# Call News section => blog template #}
+      
         {% include 'blog.html' %} 
+      
       </div>
 
       <div class="col-sm-4 px-4">

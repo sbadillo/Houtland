@@ -1,9 +1,9 @@
 Title: Apost with a gif test
 Date: 2017-07-09
 
-![gif test]({attach}giphy.gif)
+![gif test](https://media.giphy.com/media/RWJPtq90qOA4E/giphy.gif)
 
-Lorem ipsum dolor sit amet diam ut lorem. In tristique senectus et enim. Sed justo fringilla non, dolor. Nullam viverra justo. Praesent vitae massa in faucibus a, laoreet vel, ipsum. Donec erat volutpat.
+Just testing what happens if yu add a gif in the top of your article. the fits part of it will be displayed in the maing page. The Same will happen for images on top of posts.
 
 
 Suspendisse eget dolor gravida sem. Integer adipiscing. Vestibulum dignissim a, gravida tellus tortor, hendrerit wisi. Aliquam vel lorem. Mauris imperdiet, urna mauris, consectetuer congue eleifend. Nulla gravida vel, dui. Cras ut ante. Mauris luctus laoreet. Nam ullamcorper lorem. Aliquam erat metus dolor, porttitor egestas. Proin imperdiet quis, justo. 
