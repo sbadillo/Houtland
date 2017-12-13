@@ -123,8 +123,26 @@ footer {
   margin-top: 150px;
 	// height: 80vh;
   margin-bottom: 150px;
+}
+
+.progress-bar {
+  z-index: 9;
+}
+
+.number-2060 {
+  z-index: 9998;
+  position:relative;
+  text-align: right;
+  float: right;
+  margin-top: 0;
+  padding-right: 1.5 * $spacer;
+  margin-bottom: -4 * $spacer;
+  font-size: .75rem;
+  line-height: 1.2rem; 
+  vertical-align: middle;
 
 }
+
 
 .container-stats {
   width: 70%;
