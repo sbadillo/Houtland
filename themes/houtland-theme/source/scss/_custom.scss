@@ -175,15 +175,23 @@ footer {
 // ==========================================
 
 
-.page-content.container {
-	max-width: 800px;
-}
+// .page-content.container {
+// 	max-width: 800px;
+// }
 
 
 .all-pages-footer {
 	padding-bottom:$spacer *2;
 }
 
+// map
+
+#map {
+  min-width: 100%;
+  height: 100%;
+  padding: 0;
+  
+}
 
 
 // ==========================================

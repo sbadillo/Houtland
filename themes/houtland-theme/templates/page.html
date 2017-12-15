@@ -7,16 +7,14 @@
 <br>
 
 
-<div class="container page-content">
+<div class="container-fluid page-content">
 	
 	{% import 'translations.html' as translations with context %}
 	{{ translations.translations_for(page) }}	
 	{{ page.content }}
 
 	<div class="all-pages-footer">
-		<!-- <div class="regresar">
-			<a href="{{ SITEURL }}" class="btn btn-secondary btn-small"><i class="fa fa-home fa" aria-hidden="true"></i> Regresar</a>
-		</div> -->
+
 	</div>
 </div>
 

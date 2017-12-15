@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
-  // set video iniciat volume
-  var vid = $('video').get(0);
-  vid.volume = 0.2;
-
-	// Appear on scroll navbar
-	// (this one is used in the main page only)
-	
-	// hide super-navbar first (this one is used in the main page only)
+  // Appear on scroll navbar
+  // (this one is used in the main page only)
+  
+  // hide super-navbar first (this one is used in the main page only)
 
     var pathname = window.location.pathname; // Returns path only
     console.log(pathname);
     if (pathname == '/' || pathname == '/houtland/') {
+
+      // set video iniciat volume
+      var vid = $('video').get(0);
+      vid.volume = 0.2;
     
       // hide it first
       $(".super-navbar").hide();
