@@ -4,18 +4,15 @@
 
 {% block content %}
 
-<br>
-
-
-<div class="container-fluid page-content">
+<div class="page-container">
 	
 	{% import 'translations.html' as translations with context %}
 	{{ translations.translations_for(page) }}	
 	{{ page.content }}
 
-	<div class="all-pages-footer">
+<!-- 	<div class="all-pages-footer">
 
-	</div>
+	</div> -->
 </div>
 
 

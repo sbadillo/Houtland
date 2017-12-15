@@ -44,23 +44,16 @@
   {% endblock %}
 
   <footer id="contentinfo" class="body">
-    <address id="about" class="vcard body">
-      <div class="container-fluid footer-container no-deco-please">
-        <div class="container contact">
-            <a class="nav-link" href="{{ SITEURL }}/pages/Contact.html">Contact</a>
-        </div>
+    <div class="container-fluid footer-container no-deco-please">
+      <div class="container contact">
+      {# <a class="nav-link" href="{{ SITEURL }}/pages/Contact.html">Contact</a> #}
       </div>
+    </div> 
 
-
-      <!-- modernizr -->
-      <script type="text/javascript" src="{{ SITEURL }}/theme/js/modernizr-custom.min.js"></script>
-
-      <!-- all scripts minified and concatenated (excep modernizr) -->
-      <script type="text/javascript" src="{{ SITEURL }}/theme/js/all.js"></script>
-
-
-
-    </address><!-- /#about -->
+    <!-- modernizr -->
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/modernizr-custom.min.js"></script>
+    <!-- all scripts minified and concatenated (excep modernizr) -->
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/all.js"></script>
 
   </footer><!-- /#contentinfo -->
 
