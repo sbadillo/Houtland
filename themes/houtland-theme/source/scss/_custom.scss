@@ -102,7 +102,7 @@ footer {
 .container-fluid.video-jumbo {
   width: 100%;
   padding: 0;
-  background-color: #000;
+  background-color: #fff;
   cursor: nstre-resize;
 }
 
@@ -243,6 +243,10 @@ footer {
   align-items: center;
 }
 
+.navbar-when-fixed {
+  // background: rgba(255,255,255,1)  
+}
+
 
 // ====================================
 //  Article pages
@@ -250,3 +254,5 @@ footer {
 .article-container {
   margin-top: 3rem;
 }
+
+
