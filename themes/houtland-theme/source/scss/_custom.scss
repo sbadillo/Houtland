@@ -103,7 +103,7 @@ footer {
   width: 100%;
   padding: 0;
   background-color: #fff;
-  cursor: nstre-resize;
+  // cursor: ns-resize !important;
 }
 
 
@@ -116,6 +116,7 @@ footer {
   overflow: hidden;
   z-index: -1;
   width:100%;
+  cursor: ns-resize;
 }
 
 
@@ -226,6 +227,11 @@ footer {
 
 .btn.btn-custom {
   color: #000;
+  // -webkit-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
+  // -moz-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
+  // -ms-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
+  // -o-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
 }
 
 .progress-bar.progress-custom {
