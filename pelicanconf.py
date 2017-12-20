@@ -35,7 +35,7 @@ BOOTSTRAPIFY = {'img': ['img-fluid']} # bootstrapify uses beautifulsoup to apply
 # Social widget: names are used for font-awesome icons, use lowerspace
 SOCIAL = ('facebook', 'https://www.facebook.com/')
 
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = False # the number of articles per page, use False for no pagination
 RELATIVE_URLS = True  # true for deployment, see publishconf.py for publishing config
 DEFAULT_DATE = 'fs' # when no date is specified in an article, just today's date
 

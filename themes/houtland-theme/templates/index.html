@@ -36,16 +36,20 @@
     </div>
 
   {#      2.2 Buttons #}
-
-    <div id="header_nav">
-      <div id="screen-height-20" class="row text-center ">
-        <div class="container-fluid my-auto">
+  <div id="screen-height-20" class="container-fluid text-center vertical-center">
+    
+    <div id="header_nav" class="container my-3">
+      <div id="" class="text-center navbar-for-index">
+        <div class="container-fluid my-auto text-center">
           <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/tree01.html">Live tree</a>
           <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="#">Support</a> 
           <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/map.html">Map</a>  
         </div>
       </div>
     </div>
+    
+  </div>
+
 
   {#      2.3 Stats #}
 
@@ -83,7 +87,7 @@
   </div><!--/.call-for-action (Section 2) -->
 
 
-  {# Section 3 : News #}
+  {# Section 3 : Main Article and News #}
 
 
   <div class="container mb-4">
@@ -91,9 +95,10 @@
     <div class="row">
 
 
-      <div class="col-sm-8 border-right px-4">
+      <div class="col-sm-8 border-right pr-5">
 
         {# Display fully the articles in the Articles in main page category #}
+
         {% for article in articles_page.object_list if "articles-in-main-page" == article.category %}
           <article class="hentry">
             <header><h2 class="entry-title">{{ article.title }}</h2></header>

@@ -29,6 +29,7 @@ $color-houtland-red:          #b11e24;
 //changes to button color
 $brand-success:         $color-houtland-softgreen;
 $btn-success-bg:        $color-houtland-softgreen;
+$btn-success-border:    $color-houtland-softgreen;
 $brand-success:         $color-houtland-softgreen;
 // $enable-rounded: false;
 
@@ -47,6 +48,9 @@ $container-max-widths: (
 // modification to display-4 sizes (text was too large)
 // $display4-size:      3rem;   //default was 3.5rem
 // $display4-weight:     300 ; 
+
+// no round elements
+$enable-rounded:   false;
 
 
 
@@ -92,10 +96,10 @@ footer {
 
 #screen-height {
   min-height: 100vh;
-  background-size: cover;
+  // background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-    display: flex; /* NEW */
+  display: flex; /* NEW */
   }
 
 
@@ -227,11 +231,6 @@ footer {
 
 .btn.btn-custom {
   color: #000;
-  // -webkit-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
-  // -moz-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
-  // -ms-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
-  // -o-webkit-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
-  box-shadow: 0 4px 15px 0 rgba(0,0,0,0.15);
 }
 
 .progress-bar.progress-custom {
@@ -250,8 +249,30 @@ footer {
 }
 
 .navbar-when-fixed {
-  // background: rgba(255,255,255,1)  
+  // background: #fff;  
+  height: inherit;
 }
+
+.bg-houtland-red {
+  background-color: $color-houtland-red;
+}
+
+
+.custom-navbar-container {
+
+}
+
+.custom-navbar {
+  z-index: 9998;
+  position: absolute;
+  top:auto;
+  left:50%;
+  transform: translate(-50%,0%);
+  display: inline-block;
+  
+}
+
+
 
 
 // ====================================

@@ -44,9 +44,10 @@ $(document).ready(function() {
 
   $(window).scroll(function () {
     if ($(window).scrollTop() > elementPosition.top) {
-      $('#header_nav').addClass('fixed-top navbar-when-fixed');
+      $('#header_nav').addClass('fixed-top navbar-when-fixed', {duration:500});
+
     } else {
-      $('#header_nav').removeClass('fixed-top')
+      $('#header_nav').removeClass('fixed-top navbar-when-fixed')
     }
   });
 
