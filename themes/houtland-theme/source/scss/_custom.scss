@@ -258,18 +258,22 @@ footer {
 }
 
 
-.custom-navbar-container {
-
-}
-
 .custom-navbar {
   z-index: 9998;
   position: absolute;
   top:auto;
   left:50%;
   transform: translate(-50%,0%);
-  display: inline-block;
-  
+  display: inline-block;  
+}
+
+.overlay {
+    position:absolute;
+    top:15%;
+    left:5%;
+    // max-width: 70%;
+    text-align: left;
+    z-index:1;
 }
 
 

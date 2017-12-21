@@ -139,6 +139,13 @@ footer {
   transform: translate(-50%, 0%);
   display: inline-block; }
 
+.overlay {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  text-align: left;
+  z-index: 1; }
+
 .article-container {
   margin-top: 3rem; }
 

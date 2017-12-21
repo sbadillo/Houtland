@@ -24,16 +24,17 @@ $(document).ready(function() {
         if ($(this).scrollTop() > 300) { 
 
           // show navbar
-          $('.super-navbar').fadeIn(0);
-          $('.super-navbar').addClass('d-flex');
+          // $('.super-navbar').fadeIn(0);
+          // $('.super-navbar').addClass('d-flex');
+          
           // and stop video
-          $('video').get(0).pause();
+          // $('video').get(0).pause();
 
           // console.log('show');
         } else {
-          $('.super-navbar').removeClass('d-flex');
-          $('.super-navbar').fadeOut(0);
-          $('video').get(0).play();
+          // $('.super-navbar').removeClass('d-flex');
+          // $('.super-navbar').fadeOut(0);
+          // $('video').get(0).play();
           
         }
       });
