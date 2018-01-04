@@ -71,6 +71,10 @@ footer {
 	line-height:$spacer;
 }
 
+.modal-content {
+  color: $almost-black;
+}
+
 //random
 
 .debug-1 { 
@@ -229,8 +233,16 @@ footer {
   text-decoration: none !important;
 }
 
-.btn.btn-custom {
+.btn.btn-nocolor {
   color: #000;
+  background-color: #fff;
+  border: 2px solid $almost-black;
+}
+
+.btn.btn-nocolor:hover {
+  color: $color-houtland-softgreen;
+  background-color: #fff;
+  border: 2px solid $almost-black;
 }
 
 .progress-bar.progress-custom {

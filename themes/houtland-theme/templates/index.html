@@ -8,84 +8,107 @@
 <section id="content">
   {% block content_title %}
   
-   
+
   <div class="container-fluid video-jumbo text-center">
     <video id="container-video" controls="" autoplay="" muted="" loop="" >
       <source src="{{ SITEURL }}/extra/out_footage_720p30.mp4" type="video/mp4"><!-- WebKit video    -->
-      {# <source src="backupvideowebm.webm" type="video/webm"><!-- WebM/VP8/Vorbis --> #}
-      {# <source src="backupvideoogg.ogg" type="video/ogg"><!-- Firefox / Opera --> #}
-      <object width="640" height="505" type="application/x-shockwave-flash" data="http://www.youtube.com/v/YE7VzlLtp-4">
-      <param name="movie" value="https://www.youtube.com/v/YE7VzlLtp-4">
-        <!-- fallback image -->
-        <img src="{{ SITE_URL }}/images/poster.jpg" width="640" height="360" alt="" title="No video playback capabilities, please download the video below">
-      </object>
-    </video>
+        {# <source src="backupvideowebm.webm" type="video/webm"><!-- WebM/VP8/Vorbis --> #}
+          {# <source src="backupvideoogg.ogg" type="video/ogg"><!-- Firefox / Opera --> #}
+            <object width="640" height="505" type="application/x-shockwave-flash" data="http://www.youtube.com/v/YE7VzlLtp-4">
+              <param name="movie" value="https://www.youtube.com/v/YE7VzlLtp-4">
+              <!-- fallback image -->
+              <img src="{{ SITE_URL }}/images/poster.jpg" width="640" height="360" alt="" title="No video playback capabilities, please download the video below">
+            </object>
+          </video>
 
-{#     <div class="overlay">
-        <p class="display-3 text-white">What if the Netherlands were covered with trees?</p>
-    </div>
- #}
+          {#     <div class="overlay">
+            <p class="display-3 text-white">What if the Netherlands were covered with trees?</p>
+          </div>
+          #}
 
-  </div><!--./video-jumbo -->
+        </div><!--./video-jumbo -->
 
-  {# Section 2 : Action #}
-  
-  <div class="container call-for-action">
+        {# Section 2 : Action #}
 
-  {#      2.1 Main message #}
+        <div class="container call-for-action">
 
-    <div id="screen-height-20" class="row text-center">
-      <div class="container my-auto">
-        <p class="display-4 mb-4">What if the Netherlands were covered with trees?</p>
-        <p class="text-justify h3 mx-4 px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente iure natus molestias at, sed alias assumenda ea, laudantium totam quo nemo. </p>
-      </div>
-    </div>
+          {#      2.1 Main message #}
 
-  {#      2.2 Buttons #}
-  <div id="screen-height-20" class="container-fluid text-center vertical-center">
-    
-    <div id="header_nav" class="container my-3">
-      <div id="" class="text-center navbar-for-index">
-        <div class="container-fluid my-auto text-center">
-          <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/tree01.html">Live tree</a>
-          <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="#">Support</a> 
-          <a class="btn btn-success btn-custom mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/map.html">Map</a>  
-        </div>
-      </div>
-    </div>
-    
-  </div>
+          <div id="screen-height-20" class="row text-center">
+            <div class="container my-auto">
+              <p class="display-4 mb-4">What if the Netherlands were covered with trees?</p>
+              <p class="text-justify h3 mx-4 px-2">At the moment only 11% of the Netherlands is covered with trees. With this project we aim at a complete reforestation of the country by 2060. 
+              Be part of the most forward thinking project in dutch history. Plant a tree and let your kids build a treehouse when they grow up. We thank you for your support. </p>
+            </div>
+          </div>
+
+          {#      2.2 Buttons #}
+          <div id="screen-height-20" class="container-fluid text-center vertical-center">
+
+            <div id="header_nav" class="container my-3">
+              <div id="" class="text-center navbar-for-index">
+                <div class="container-fluid my-auto text-center">
+                  <a class="btn btn-custom btn-nocolor mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/tree01.html">Live tree</a>
+                  <a class="btn btn-success btn-nocolor mx-2 my-2 btn-lg" role="button" href="#">Support</a> 
+                  <a class="btn btn-success btn-nocolor mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/map.html">Map</a>  
+                </div>
+              </div>
+            </div>
+
+          </div>
 
 
-  {#      2.3 Stats #}
+          {#      2.3 Stats #}
 
-    <div id="screen-height-20" class="row text-center" >
-      <div class="container my-auto mx-auto text-center container-stats">
+          <div id="screen-height-20" class="row text-center" >
+            <div class="container my-auto mx-auto text-center container-stats">
 
-        <div class="progress my-3 mx-4">
-          <div class="progress-bar progress-custom vertical-center" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-            <span class="float-left ml-1">
+              <div class="progress my-3 mx-4">
+                <div class="progress-bar progress-custom vertical-center" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                  <span class="float-left ml-1">
+                    Trees planted
+<!--               <i class="fa fa-tree" aria-hidden="true"></i>
               <i class="fa fa-tree" aria-hidden="true"></i>
-              <i class="fa fa-tree" aria-hidden="true"></i>
-              <i class="fa fa-tree" aria-hidden="true"></i>
+              <i class="fa fa-tree" aria-hidden="true"></i> -->
             </span>
           </div>
         </div>
 
-        <div class="number-2060 mr-1"><b>2060</b></div>
+        <div class="number-2060 mr-1">2060</div>
         <div class="progress my-3 mx-4">
-          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="0" aria-valuemin="2" aria-valuemax="100" style="width: 100%">
-            <span class="float-left ml-1 strong"><b>2018</b></span>
+          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="0" aria-valuemin="2" aria-valuemax="100" style="width: 20%">
+            <span class="float-left ml-1 strong">2018 timeline</span>
           </div>
         </div>
         
         <div class="progress my-3 mx-4">
-          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 2%">
+          <div class="progress-bar progress-custom  vertical-center " role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
             <span class="float-left ml-1 vertical-center">
               <i class="fa fa-eur" aria-hidden="true"></i>
+              <i class="fa fa-eur" aria-hidden="true"></i>
+              <i class="fa fa-eur" aria-hidden="true"></i>
+            </span>
+            <span class="w-100">
+              <span class="float-sm-right mr-1">Pledged 1000</span>
+            </span>          
+          </div>
+        </div>
+
+        <div class="progress my-3 mx-4">
+          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+            <span class="float-left ml-1 vertical-center">
+              <i class="fa fa-female" aria-hidden="true"></i>
+              <i class="fa fa-male" aria-hidden="true"></i>
+              <i class="fa fa-female" aria-hidden="true"></i>
+              <i class="fa fa-male" aria-hidden="true"></i>
+            </span>
+            <span class="w-100">
+              <span class="float-sm-right mr-1">Supporters</span>
             </span>
           </div>
         </div>
+
+
 
       </div>
     </div>
@@ -106,16 +129,16 @@
         {# Display fully the articles in the Articles in main page category #}
 
         {% for article in articles_page.object_list if "articles-in-main-page" == article.category %}
-          <article class="hentry">
-            <header><h2 class="entry-title">{{ article.title }}</h2></header>
-            <div class="entry-content">{{ article.content }} </div><!-- entry-content -->
-          </article>
+        <article class="hentry">
+          <header><h2 class="entry-title">{{ article.title }}</h2></header>
+          <div class="entry-content">{{ article.content }} </div><!-- entry-content -->
+        </article>
         {% endfor %}
 
         {# Call News section => blog template #}
-      
+
         {% include 'blog.html' %} 
-      
+
       </div>
 
       <div class="col-sm-4 px-4">
