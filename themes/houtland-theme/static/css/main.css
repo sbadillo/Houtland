@@ -159,6 +159,14 @@ footer {
 .article-container {
   margin-top: 3rem; }
 
+body {
+  opacity: 1;
+  transition: 0.5s opacity; }
+
+body.fade-out {
+  opacity: 0;
+  transition: none; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;

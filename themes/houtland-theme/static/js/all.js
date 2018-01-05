@@ -238,6 +238,10 @@ if(n||(n=new h(this,o),t(this).data(a,n)),"string"==typeof e){if(void 0===n[e])t
 
 $(document).ready(function() {
 
+  // ==== trying a fade in whole page thing.
+  $(function() {
+    $('body').removeClass('fade-out');
+  });
 
 
   var pathname = window.location.pathname; // Returns path only
@@ -256,27 +260,7 @@ $(document).ready(function() {
     $(".super-navbar").hide();
     $('.super-navbar').removeClass('static-top').addClass('fixed-top');
 
-    $(function () {
-      $(window).scroll(function () {
-        // set distance user needs to scroll before we fadeIn navbar
-        if ($(this).scrollTop() > 300) { 
 
-          // show navbar
-          // $('.super-navbar').fadeIn(0);
-          // $('.super-navbar').addClass('d-flex');
-          
-          // and stop video
-          // $('video').get(0).pause();
-
-          // console.log('show');
-        } else {
-          // $('.super-navbar').removeClass('d-flex');
-          // $('.super-navbar').fadeOut(0);
-          // $('video').get(0).play();
-          
-        }
-      });
-    });
   };
 
   var elementPosition = $('#header_nav').offset();
