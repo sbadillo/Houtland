@@ -140,16 +140,20 @@
 
       </div>
 
+
+              <img src="/images/donation-2.png img-fluid" alt="">
+
+
       <div class="col-sm-4 px-4">
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
           <div class="card-header p-2">
-            <div class="row ">
-              <h5 class="col-md-4 mb-0">€5</h5>
-              <h5 class="col-md-8 mb-0">T-shirt</h5>
+            <div class="row no-deco-please">
+              <h5 class="col-md-4 mb-0 ">€5</h5>
+              <h5 class="col-md-8 mb-0 ">T-shirt</h5>
             </div>
           </div>  
-          <img class="card-img-bottom img-fluid" src="./images/donation-button-1-small.png" alt="Card image cap">
+          <a data-toggle="modal" data-target="#donate-1-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-1-small.png" alt="Card image cap"></a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
@@ -159,7 +163,7 @@
               <h5 class="col-md-8 ">Seed Bag</h5>
             </div>
           </div>  
-          <img class="card-img-bottom img-fluid" src="./images/donation-button-2-small.png" alt="Card image cap">
+           <a data-toggle="modal" data-target="#donate-2-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-2-small.png" alt="Card image cap"></a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
@@ -169,7 +173,9 @@
               <h5 class="col-md-8">Oak Sapling</h5>
             </div>
           </div>  
+          <a href="#yolo">
           <img class="card-img-bottom img-fluid" src="./images/donation-button-3-small.png" alt="Card image cap">
+          </a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
@@ -179,7 +185,9 @@
               <h5 class="col-md-8">Tree Suit</h5>
             </div>
           </div>  
+          <a href="#yolo">
           <img class="card-img-bottom img-fluid" src="./images/donation-button-4-small.png" alt="Card image cap">
+          </a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
@@ -189,7 +197,9 @@
               <h5 class="col-md-8">Livestream of Tree01</h5>
             </div>
           </div>  
+          <a href="#yolo">
           <img class="card-img-bottom img-fluid" src="./images/donation-button-5-small.png" alt="Card image cap">
+          </a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
@@ -199,9 +209,12 @@
               <h5 class="col-md-8">Tiny Forest</h5>
             </div>
           </div>  
+          <a href="#yolo">
           <img class="card-img-bottom img-fluid" src="./images/donation-button-6-small.png" alt="Card image cap">
+        </a>
         </div>
 
+        {% include "all-donate-modals.html" %}
 
 
       </div> <!-- /.col -->

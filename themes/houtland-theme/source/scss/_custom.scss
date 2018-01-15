@@ -187,14 +187,26 @@ footer {
   border: $border-yeah;
 }
 
+#content > div.container.mb-4 > div > div.col-sm-4.px-4 > div > a > img:hover {
+  filter: saturate(120%);
+  filter: contrast(120%);
+  cursor: pointer;
+}
+
+.border-full {
+  border: $border-yeah;
+}
+
 .card-header > div > h5 {
   margin-bottom: 0;
+  text-decoration: none;
+  color: $almost-black;
 }
 
 .card-img-bottom {
   border-top: $border-yeah;
-}
 
+}
 
 
 // ==========================================

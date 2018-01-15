@@ -5,6 +5,6 @@ Today the 23.01.2018 was the launch of the project in Eindhoven. Feel free to vi
 
 Presentation for the World vodezel tag in de buik van de Economische Zaken.
 
-![image]({ SITEURL } /images/project-launch-1.png)
+![image](/images/project-launch-1.png)
 
 ![image](/images/project-launch-2.png)

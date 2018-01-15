@@ -88,8 +88,18 @@ footer {
 .card.card-style {
   border: solid 2px #292b2c; }
 
+#content > div.container.mb-4 > div > div.col-sm-4.px-4 > div > a > img:hover {
+  filter: saturate(120%);
+  filter: contrast(120%);
+  cursor: pointer; }
+
+.border-full {
+  border: solid 2px #292b2c; }
+
 .card-header > div > h5 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #292b2c; }
 
 .card-img-bottom {
   border-top: solid 2px #292b2c; }
