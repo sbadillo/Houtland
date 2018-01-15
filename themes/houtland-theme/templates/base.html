@@ -47,45 +47,15 @@
   {% block content %}
   {% endblock %}
 
-  <footer id="contentinfo" class="body">
-    <div class="container-fluid footer-container ">
-     <!-- Button trigger modal -->
-     <a style="cursor: pointer" data-toggle="modal" data-target="#contactModal">
-      Contact
-     </a>
+  <footer id="" class="body">
 
-    <!-- Modal -->
-    <div class="modal fade" style="z-index:1000000000" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>You can also contact us directly by leaving a message at:</p>
-            <br>
-            <p>The Tree Crop Exploration</p>
-            <p>support@treecropexploration.nl</p>
-            <br>
-            <p>Timm Donke</p>
-            <p>timm.donke@web.de</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- ./modal-->
-  </div> 
+    <!-- modernizr -->
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/modernizr-custom.min.js"></script>
+    <!-- all scripts minified and concatenated (excep modernizr) -->
+    <script type="text/javascript" src="{{ SITEURL }}/theme/js/all.js"></script>
 
-  <!-- modernizr -->
-  <script type="text/javascript" src="{{ SITEURL }}/theme/js/modernizr-custom.min.js"></script>
-  <!-- all scripts minified and concatenated (excep modernizr) -->
-  <script type="text/javascript" src="{{ SITEURL }}/theme/js/all.js"></script>
-
-</footer><!-- /#contentinfo -->
+  </footer><!-- /#contentinfo -->
 
 </body>
 </html>

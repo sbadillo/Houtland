@@ -1,5 +1,6 @@
 Title: Apost with a gif test
 Date: 2017-07-09
+status: draft
 
 ![gif test](https://media.giphy.com/media/RWJPtq90qOA4E/giphy.gif)
 

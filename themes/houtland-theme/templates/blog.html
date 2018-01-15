@@ -2,9 +2,9 @@
 
 
 <!-- New Section -->
-<h1 class="mb-0 w-100 p-2 bg-newsstrip mt-4">> The {{ SITENAME }} Project News</h1>
+<h2 class="mb-0 w-100 mt-4 border-top pt-4">NEWS</h2>
 
-<div class="bg-newsstrip p-3">
+<div class="pt-4">
 
   {% for article in articles_page.object_list if "news" == article.category %}
   <article class="hentry">

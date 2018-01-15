@@ -1,5 +1,6 @@
 Title: An article with an image.
 Date: 2017-11-12
+status: draft
 
 So, if you put an image in the first 40 words of your article, then also the image will be shown the main page. Like this one:
 

@@ -48,6 +48,6 @@ AUTHOR_FEED_RSS = None
 
 
 # MORE customization stuff
-SUMMARY_MAX_LENGTH = 40	      # The size (in caracters) of the summary of the articles to show in the main page.
+SUMMARY_MAX_LENGTH = None	      # The size (in caracters) of the summary of the articles to show in the main page. use None for no summaries(all content displayed)
 
 

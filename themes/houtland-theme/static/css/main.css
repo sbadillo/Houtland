@@ -8,11 +8,12 @@
   display: none; }
 
 footer {
-  height: auto;
-  padding: 1rem 0;
+  display: none; }
+
+.false-footer {
   background-color: #292b2c;
-  color: #eceeef;
-  line-height: 1rem; }
+  color: #fff;
+  vertical-align: middle; }
 
 .modal-content {
   color: #292b2c; }
@@ -78,27 +79,39 @@ footer {
   display: flex;
   /* NEW */ }
 
-.bg-newsstrip {
-  background-color: #fafafa; }
+.border-top {
+  border-top: solid 2px #292b2c; }
 
 .border-right {
-  border-right: solid 1px #292b2c; }
+  border-right: solid 2px #292b2c; }
+
+.card.card-style {
+  border: solid 2px #292b2c; }
+
+.card-header > div > h5 {
+  margin-bottom: 0; }
+
+.card-img-bottom {
+  border-top: solid 2px #292b2c; }
 
 .container-fluid {
   max-width: 100%;
-  padding: 0; }
-
-.container-fluid.map-page {
   padding: 0;
-  max-height: calc(100% - 4rem - 1.5rem); }
+  margin: 0; }
 
-.all-pages-footer {
-  padding-bottom: 1rem; }
+.link-in-footer {
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer; }
 
-#map {
-  min-width: 100%;
-  height: 100%;
-  padding: 0; }
+.map-container {
+  border: solid 2px #292b2c;
+  padding: 0;
+  max-width: 100%; }
+
+#map > div {
+  padding: 0;
+  margin-bottom: 2rem; }
 
 .button-modal {
   z-index: 9999;
@@ -116,7 +129,7 @@ footer {
 .btn.btn-nocolor {
   color: #000;
   background-color: #fff;
-  border: 2px solid #292b2c; }
+  border: solid 2px #292b2c; }
 
 .btn.btn-nocolor:hover {
   color: #77c464;
@@ -142,12 +155,8 @@ footer {
   background-color: #b11e24; }
 
 .custom-navbar {
-  z-index: 9998;
-  position: absolute;
-  top: auto;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  display: inline-block; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .overlay {
   position: absolute;
@@ -166,6 +175,12 @@ body {
 body.fade-out {
   opacity: 0;
   transition: none; }
+
+.hover-green-deco:hover {
+  color: #77c464; }
+
+.research-window {
+  border-left: solid 2px #292b2c; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {

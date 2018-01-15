@@ -33,6 +33,9 @@ $btn-success-border:    $color-houtland-softgreen;
 $brand-success:         $color-houtland-softgreen;
 // $enable-rounded: false;
 
+$border-yeah: solid 2px $almost-black;
+
+
 // font override for <body>:
 $font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -64,11 +67,14 @@ $enable-rounded:   false;
 }
 
 footer {
-	height:auto;
-	padding:$spacer 0;
-	background-color: $almost-black;
-	color:$gray-lighter;
-	line-height:$spacer;
+	display:none;
+}
+
+.false-footer {
+  // height: $spacer*5;
+  background-color: $almost-black;
+  color: #fff;
+  vertical-align: middle;
 }
 
 .modal-content {
@@ -169,15 +175,25 @@ footer {
   }
 
 // ========= Section 3: Donate buttons =========
-
-.bg-newsstrip {
-  background-color: #fafafa;
+.border-top {
+  border-top: $border-yeah;
 }
 
 .border-right {
-  border-right:solid 1px $almost-black;
+  border-right: $border-yeah;
 }
 
+.card.card-style {
+  border: $border-yeah;
+}
+
+.card-header > div > h5 {
+  margin-bottom: 0;
+}
+
+.card-img-bottom {
+  border-top: $border-yeah;
+}
 
 
 
@@ -189,23 +205,30 @@ footer {
 .container-fluid{
 	max-width: 100%;
   padding:0;
+  margin:0;
 }
 
-.container-fluid.map-page {
-  padding: 0;
-  max-height: calc(100% - 4rem - 1.5rem);  // trying to substract the navbar and the footer heights!
+
+
+
+.link-in-footer {
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
-.all-pages-footer {
-	padding-bottom:$spacer;
-}
 
 // map
 
-#map {
-  min-width: 100%;
-  height: 100%;
-  padding: 0;  
+.map-container {
+  border: $border-yeah;
+  padding:0; 
+  max-width: 100%;
+}
+
+#map > div {
+  padding: 0; 
+  margin-bottom: $spacer*2;
 }
 
 .button-modal {
@@ -214,8 +237,6 @@ footer {
   bottom: 10%;
   right:5%; 
 }
-
-
 
 
 // ==========================================
@@ -236,7 +257,7 @@ footer {
 .btn.btn-nocolor {
   color: #000;
   background-color: #fff;
-  border: 2px solid $almost-black;
+  border: $border-yeah;
 }
 
 .btn.btn-nocolor:hover {
@@ -270,14 +291,16 @@ footer {
 }
 
 
+
+
+// // old navbar
+
 .custom-navbar {
-  z-index: 9998;
-  position: absolute;
-  top:auto;
-  left:50%;
-  transform: translate(-50%,0%);
-  display: inline-block;  
+ margin-top: $spacer;
+ margin-bottom: $spacer;
 }
+
+
 
 .overlay {
     position:absolute;
@@ -307,4 +330,18 @@ body {
 body.fade-out {
     opacity: 0;
     transition: none;
+}
+
+
+.hover-green-deco:hover {
+  color: $color-houtland-softgreen;
+}
+
+
+
+
+//research
+
+.research-window {
+  border-left: $border-yeah;
 }
