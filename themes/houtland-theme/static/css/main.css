@@ -192,6 +192,9 @@ body.fade-out {
 .research-window {
   border-left: solid 2px #292b2c; }
 
+.btn-wide-equal {
+  width: 9rem; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;

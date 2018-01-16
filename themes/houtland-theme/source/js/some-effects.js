@@ -9,21 +9,21 @@ $(document).ready(function() {
   var pathname = window.location.pathname; // Returns path only
   console.log(pathname);
   
-  // Appear on scroll navbar
-  // (this one is used in the main page only)
-  // hide super-navbar first (this one is used in the main page only)
-  if (pathname == '/' || pathname == '/houtland/') {
+  // // Appear on scroll navbar
+  // // (this one is used in the main page only)
+  // // hide super-navbar first (this one is used in the main page only)
+  // if (pathname == '/' || pathname == '/houtland/') {
 
-    // set video iniciat volume
-    var vid = $('video').get(0);
-    vid.volume = 0.2;
+  //   // set video iniciat volume
+  //   var vid = $('video').get(0);
+  //   vid.volume = 0.2;
 
-    // hide it first
-    $(".super-navbar").hide();
-    $('.super-navbar').removeClass('static-top').addClass('fixed-top');
+  //   // hide it first
+  //   $(".super-navbar").hide();
+  //   $('.super-navbar').removeClass('static-top').addClass('fixed-top');
 
 
-  };
+  // };
 
   var elementPosition = $('#header_nav').offset();
 
@@ -36,13 +36,66 @@ $(document).ready(function() {
     }
   });
 
+
 	// Use lazyload
 
 	$(".lazy").lazyload({
 		effect          : "fadeIn"
 	});
 
+
+ // Instance the tour
+
+
+
+  
+  $( "#support-button" ).click(function() {
+
+      var tour = new Tour({
+      name: "tour",
+      smartPlacement: false,
+      steps: [
+      {
+        title:"Hi!",
+        content: "You can support by choosing your actions over here." ,
+        element: "#tour-target",
+        placement: 'top'
+      }
+      ],
+      template: 
+      '<div class="popover popover-dismiss border-full" role="tooltip"> \
+      <div class="arrow"></div> \
+      <div class="popover-data-content lead m-4">You can support by choosing your actions over here.</div>\
+      <div class="popover-navigation"><button class="btn btn-nocolor" data-role="end">Okay!</button></div> \
+      </div>',
+      container: "body",
+      keyboard: true,
+      debug: true,
+      backdrop: true,
+      backdropContainer: 'body',
+      backdropPadding: 20,
+      redirect: true,
+      orphan: true,
+    });
+
+    // Initialize the tour
+    tour.init();
+    
+    tour.restart();
+
+
+  });
+
+
+
 });
+
+
+
+
+
+
+
 
 
 

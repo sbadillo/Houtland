@@ -34,7 +34,8 @@ gulp.task('sass', function() {
 gulp.task('copycss', ['sass'], function() {
 	return gulp.src([
 		'./bower_components/font-awesome/css/font-awesome.min.css',
-		'./bower_components/magnific-popup/dist/magnific-popup.css'
+		'./bower_components/magnific-popup/dist/magnific-popup.css',
+		'./source/css/bootstrap-tour.css'
 		])
 	.pipe(gulp.dest('./static/css/'));
 });
@@ -47,13 +48,9 @@ gulp.task('copyjs', function() {
 	return gulp.src([
 		'./bower_components/jquery/dist/jquery.min.js',
 		'./bower_components/tether/dist/js/tether.min.js',
-		'./bower_components/bootstrap/dist/js/bootstrap.min.js',
-		'./bower_components/jcarousel/dist/jquery.jcarousel.min.js',
-		'./bower_components/jcarouselLazyLoading/dist/jquery.jcarousel-lazyloading.min.js',
-		'./bower_components/jcarousel-swipe/dist/jquery.jcarousel-swipe.min.js',	
-		'./bower_components/magnific-popup/dist/jquery.magnific-popup.min.js',	
+		'./bower_components/bootstrap/dist/js/bootstrap.min.js',	
+		'./bower_components/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'./source/js/*.js'])
-	// .pipe(uglify())   // i dont know why this is slowing things down.
 	.pipe(concat('all.js'))
 	.pipe(gulp.dest('./static/js/'));
 });

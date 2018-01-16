@@ -21,10 +21,6 @@
             </object>
           </video>
 
-          {#     <div class="overlay">
-            <p class="display-3 text-white">What if the Netherlands were covered with trees?</p>
-          </div>
-          #}
 
         </div><!--./video-jumbo -->
 
@@ -47,9 +43,9 @@
             <div id="header_nav" class="container my-3">
               <div id="" class="text-center navbar-for-index">
                 <div class="container-fluid my-auto text-center">
-                  <a class="btn btn-custom btn-nocolor mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/tree01.html">TREE01</a>
-                  <a class="btn btn-success btn-nocolor mx-2 my-2 btn-lg" role="button" href="#">SUPPORT</a> 
-                  <a class="btn btn-success btn-nocolor mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/map.html">MAP</a>  
+                  <a class="btn btn-nocolor btn-wide-equal mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/tree01.html">TREE01</a>
+                  <a class="btn btn-nocolor btn-wide-equal mx-2 my-2 btn-lg" role="button" href="#" id="support-button">SUPPORT</a> 
+                  <a class="btn btn-nocolor btn-wide-equal mx-2 my-2 btn-lg" role="button" href="{{ SITEURL }}/pages/map.html">MAP</a>  
                 </div>
               </div>
             </div>
@@ -141,10 +137,7 @@
       </div>
 
 
-              <img src="/images/donation-2.png img-fluid" alt="">
-
-
-      <div class="col-sm-4 px-4">
+      <div class="col-sm-4 px-4 " id="tour-target">
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
           <div class="card-header p-2">
@@ -158,62 +151,68 @@
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
           <div class="card-header p-2">
-            <div class="row">
-              <h5 class="col-md-4 ">€10</h5>
-              <h5 class="col-md-8 ">Seed Bag</h5>
+            <div class="row no-deco-please">
+              <h5 class="col-md-4 mb-0 ">€10</h5>
+              <h5 class="col-md-8 mb-0 ">Seed Bag</h5>
             </div>
           </div>  
-           <a data-toggle="modal" data-target="#donate-2-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-2-small.png" alt="Card image cap"></a>
+          <a data-toggle="modal" data-target="#donate-2-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-2-small.png" alt="Card image cap"></a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
           <div class="card-header p-2">
-            <div class="row">
-              <h5 class="col-md-4">€50</h5>
-              <h5 class="col-md-8">Oak Sapling</h5>
+            <div class="row no-deco-please">
+              <h5 class="col-md-4 mb-0 ">€50</h5>
+              <h5 class="col-md-8 mb-0 ">Oak Sapling</h5>
             </div>
           </div>  
-          <a href="#yolo">
-          <img class="card-img-bottom img-fluid" src="./images/donation-button-3-small.png" alt="Card image cap">
-          </a>
+          <a data-toggle="modal" data-target="#donate-3-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-3-small.png" alt="Card image cap"></a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
           <div class="card-header p-2">
-            <div class="row">
-              <h5 class="col-md-4">€100</h5>
-              <h5 class="col-md-8">Tree Suit</h5>
+            <div class="row no-deco-please">
+              <h5 class="col-md-4 mb-0 ">€100</h5>
+              <h5 class="col-md-8 mb-0 ">Tree suit</h5>
             </div>
           </div>  
-          <a href="#yolo">
-          <img class="card-img-bottom img-fluid" src="./images/donation-button-4-small.png" alt="Card image cap">
-          </a>
+          <a data-toggle="modal" data-target="#donate-4-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-4-small.png" alt="Card image cap"></a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
           <div class="card-header p-2">
-            <div class="row">
-              <h5 class="col-md-4">€500</h5>
-              <h5 class="col-md-8">Livestream of Tree01</h5>
+            <div class="row no-deco-please">
+              <h5 class="col-md-4 mb-0 ">€500</h5>
+              <h5 class="col-md-8 mb-0 ">Tree Live Stream</h5>
             </div>
           </div>  
-          <a href="#yolo">
-          <img class="card-img-bottom img-fluid" src="./images/donation-button-5-small.png" alt="Card image cap">
-          </a>
+          <a data-toggle="modal" data-target="#donate-5-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-5-small.png" alt="Card image cap"></a>
         </div>
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
           <div class="card-header p-2">
-            <div class="row">
-              <h5 class="col-md-4">€1000</h5>
-              <h5 class="col-md-8">Tiny Forest</h5>
+            <div class="row no-deco-please">
+              <h5 class="col-md-4 mb-0 ">€1000</h5>
+              <h5 class="col-md-8 mb-0 ">Tiny Forest</h5>
             </div>
           </div>  
-          <a href="#yolo">
-          <img class="card-img-bottom img-fluid" src="./images/donation-button-6-small.png" alt="Card image cap">
-        </a>
+          <a data-toggle="modal" data-target="#donate-6-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-6-small.png" alt="Card image cap"></a>
         </div>
 
+        <div class="text-center">
+          <p>Or choose your own contribution!</p>
+          
+          <!-- Paypal button-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RB52Z4F9Q8ULU">
+<input type="image" src="https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>          
+<!-- ./Paypal button-->
+
+
+        </div>
         {% include "all-donate-modals.html" %}
 
 
