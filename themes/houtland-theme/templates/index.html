@@ -32,8 +32,8 @@
 
           <div id="screen-height-20" class="row text-center">
             <div class="container my-auto">
-              <p class="display-4 mb-4">What if the Netherlands were covered with trees?</p>
-              <p class="text-justify h3 mx-4 px-2">Plant youself a monument and be part of the most forward thinking project in dutch history. This crouwdfunding campaign aims at the complete reforestaton of the Nethelads by 2060. Let your kids build treehouses and make the Netherlands the first truly green country. Thank you for your support.</p>
+              <p class="display-whatif mb-4">What if the Netherlands were covered with trees?</p>
+              <p class="text-justify h3 ">Plant youself a monument and be part of the most forward thinking project in dutch history. This crouwdfunding campaign aims at the complete reforestaton of the Nethelads by 2060. Let your kids build treehouses and make the Netherlands the first truly green country. Thank you for your support.</p>
             </div>
           </div>
 
@@ -59,38 +59,39 @@
             <div class="container my-auto mx-auto text-center container-stats">
 
               <div class="progress my-3 mx-4">
-                <div class="progress-bar progress-custom vertical-center" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                <div class="progress-bar progress-custom vertical-center" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100" style="width: 11%" data-toggle="tooltip" data-placement="right" title="Trees Planted">
                   <span class="float-left ml-1">
-                    Trees planted
-<!--               <i class="fa fa-tree" aria-hidden="true"></i>
+                    {# Trees planted #}
               <i class="fa fa-tree" aria-hidden="true"></i>
-              <i class="fa fa-tree" aria-hidden="true"></i> -->
+              <i class="fa fa-tree" aria-hidden="true"></i>
+              <i class="fa fa-tree" aria-hidden="true"></i>
             </span>
           </div>
         </div>
 
         <div class="number-2060 mr-1">2060</div>
         <div class="progress my-3 mx-4">
-          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="0" aria-valuemin="2" aria-valuemax="100" style="width: 20%">
-            <span class="float-left ml-1 strong">2018 timeline</span>
+          <div class="progress-bar progress-custom vertical-center" role="progressbar" aria-valuenow="0" aria-valuemin="2" aria-valuemax="100" style="width: 0%">
+            <span class="float-left ml-1 strong" data-toggle="tooltip" data-placement="right" title="Timeline">2018</span>
           </div>
         </div>
         
         <div class="progress my-3 mx-4">
-          <div class="progress-bar progress-custom  vertical-center " role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
-            <span class="float-left ml-1 vertical-center">
+          <div class="progress-bar progress-custom  vertical-center " role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+            <span class="float-left ml-1 vertical-center" data-toggle="tooltip" data-placement="right" title="Pledged">
               <i class="fa fa-eur" aria-hidden="true"></i>
               <i class="fa fa-eur" aria-hidden="true"></i>
               <i class="fa fa-eur" aria-hidden="true"></i>
             </span>
             <span class="w-100">
-              <span class="float-sm-right mr-1">Pledged 1000</span>
+              <span class="float-sm-right mr-1">{# Pledged 1000 #}</span>
             </span>          
           </div>
         </div>
 
         <div class="progress my-3 mx-4">
-          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+          <div class="progress-bar progress-custom  vertical-center" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%"
+          data-toggle="tooltip" data-placement="right " title="Supporters">
             <span class="float-left ml-1 vertical-center">
               <i class="fa fa-female" aria-hidden="true"></i>
               <i class="fa fa-male" aria-hidden="true"></i>
@@ -98,7 +99,7 @@
               <i class="fa fa-male" aria-hidden="true"></i>
             </span>
             <span class="w-100">
-              <span class="float-sm-right mr-1">Supporters</span>
+              <span class="float-sm-right mr-1">{# Supporters #}</span>
             </span>
           </div>
         </div>
@@ -137,7 +138,31 @@
       </div>
 
 
+
       <div class="col-sm-4 px-4 " id="tour-target">
+
+        <div class="card card-style mb-3" style="max-width: 20rem;">
+          <div class="card-header p-2 ">
+            <div class="row text-center">
+              <h5 class="mx-2 w-100 mb-3">Choose your own contribution</h5>
+              
+              <!-- Paypal button-->
+              <form class="text-center w-100" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="RB52Z4F9Q8ULU">
+                <input type="image" src="https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>          
+              <!-- ./Paypal button-->
+            </div>
+          </div>  
+        </div>
+
+
+
+        {% include "all-donate-modals.html" %}
+
+
 
         <div class="card card-style mb-3" style="max-width: 20rem;">
           <div class="card-header p-2">
@@ -199,21 +224,7 @@
           <a data-toggle="modal" data-target="#donate-6-Modal"><img class="card-img-bottom img-fluid" src="./images/donation-button-6-small.png" alt="Card image cap"></a>
         </div>
 
-        <div class="text-center">
-          <p>Or choose your own contribution!</p>
-          
-          <!-- Paypal button-->
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="RB52Z4F9Q8ULU">
-<input type="image" src="https://www.paypalobjects.com/en_US/NL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>          
-<!-- ./Paypal button-->
 
-
-        </div>
-        {% include "all-donate-modals.html" %}
 
 
       </div> <!-- /.col -->
@@ -236,41 +247,40 @@
       <div class="row justify-content-between">
         <div class="col-sm-8 pr-5  d-flex my-auto">
          <!-- Button trigger modal -->
-         <a class="mr-4 link-in-footer no-deco-please hover-green-deco" data-toggle="modal" data-target="#contactModal">CONTACT</a>
+         <a class="mr-4 link-in-footer no-deco-please hover-green-deco" data-toggle="modal" data-target="#contactModal"><span class="no-deco-please hover-green-deco">CONTACT</span></a>
          <a class="mr-4 link-in-footer no-deco-please hover-green-deco" href="/pages/research.html">COMPLETE RESEARCH</a>
        </div>
-       <div class="col-sm-3 px-4 ">
+       <div class="col-sm-2 px-4 ">
         <img class="img-fluid float-right" src="./images/LOGO_treecropexploration_WHITE.png">
-      </div>
-    </div><!-- .row -->
+      </div><!-- .row -->
 
 
-    <!-- Modal -->
-    <div class="modal fade" style="z-index:1000000000" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+      <!-- Modal -->
+      <div class="modal fade" style="z-index:1000000000" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              {% include "contact-content.html" %}
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-nocolor" data-dismiss="modal">Close</button>
+            </div>
+
           </div>
-          <div class="modal-body">
-            {% include "contact-content.html" %}
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-nocolor" data-dismiss="modal">Close</button>
-          </div>
-
         </div>
-      </div>
-    </div><!-- ./modal-->
+      </div><!-- ./modal-->
 
 
-  </div> <!-- ./container-->
-</div><!--.false-footer container-fluid -->
-{# ================ . false footer ==================#}
+    </div> <!-- ./container-->
+  </div><!--.false-footer container-fluid -->
+  {# ================ . false footer ==================#}
 
 
 </section><!-- /#content -->

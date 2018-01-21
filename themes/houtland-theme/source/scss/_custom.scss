@@ -203,6 +203,10 @@ footer {
   color: $almost-black;
 }
 
+#tour-target > div > div {
+  background-color: #fff;
+}
+
 .card-img-bottom {
   border-top: $border-yeah;
 
@@ -366,4 +370,33 @@ body.fade-out {
 
 .video-noclick {
   display:none;
+}
+
+// erase line inside momdal donation footers
+div > div > div > div.modal-footer {
+  border-top: 0px solid #fff;
+}
+
+
+.smaller-height-container {
+  height: calc(88vh - 4.25rem);
+}
+
+.display-whatif {
+  font-size: 2.35rem;
+  font-weight: 600;
+}
+
+
+
+// .nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
+//     color: #fff;
+//     cursor: default;
+//     background-color: $color-houtland-softgreen;
+// }
+
+.nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
+    color: #fff;
+    cursor: default;
+    background-color: $color-houtland-softgreen !important;
 }

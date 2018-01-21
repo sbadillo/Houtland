@@ -101,6 +101,9 @@ footer {
   text-decoration: none;
   color: #292b2c; }
 
+#tour-target > div > div {
+  background-color: #fff; }
+
 .card-img-bottom {
   border-top: solid 2px #292b2c; }
 
@@ -197,6 +200,21 @@ body.fade-out {
 
 .video-noclick {
   display: none; }
+
+div > div > div > div.modal-footer {
+  border-top: 0px solid #fff; }
+
+.smaller-height-container {
+  height: calc(88vh - 4.25rem); }
+
+.display-whatif {
+  font-size: 2.35rem;
+  font-weight: 600; }
+
+.nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
+  color: #fff;
+  cursor: default;
+  background-color: #77c464 !important; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {

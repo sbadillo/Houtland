@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
   // ==== trying a fade in whole page thing.
   $(function() {
     $('body').removeClass('fade-out');
@@ -10,21 +14,21 @@ $(document).ready(function() {
   // // Appear on scroll navbar
   // // (this one is used in the main page only)
   
-  if (pathname == '/' || pathname == '/houtland/') {
+  // if (pathname == '/' || pathname == '/houtland/') {
 
-    console.log("HELLO MAIN PAGE :)")
-    var elementPosition = $('#header_nav').offset();
+  //   console.log("HELLO MAIN PAGE :)")
+  //   var elementPosition = $('#header_nav').offset();
 
-    $(window).scroll(function () {
-      if ($(window).scrollTop() > elementPosition.top) {
-        $('#header_nav').addClass('fixed-top navbar-when-fixed', {duration:500});
+  //   $(window).scroll(function () {
+  //     if ($(window).scrollTop() > elementPosition.top) {
+  //       $('#header_nav').addClass('fixed-top navbar-when-fixed', {duration:500});
 
-      } else {
-        $('#header_nav').removeClass('fixed-top navbar-when-fixed')
-      }
-    });
+  //     } else {
+  //       $('#header_nav').removeClass('fixed-top navbar-when-fixed')
+  //     }
+  //   });
 
-  };
+  // };
 
 
 
