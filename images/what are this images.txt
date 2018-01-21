@@ -1,0 +1,3 @@
+this folder is to save any random stuff needed for the page.
+
+* poster.jpg :		This image is used in case the the main video fails, you can change it. 
